@@ -25,25 +25,31 @@ export default function Hero() {
         style={{ y: bgY }}
       >
         <div
-          className="absolute inset-0 scale-[1.08]"
+          className="absolute inset-0 scale-[1.08] bg-cover [background-position:72%_center] md:[background-position:center_center]"
           style={{
             backgroundImage: "url('/bg-1280x853-1.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
             backgroundColor: "#1A1A1D",
           }}
         />
       </motion.div>
 
-      {/* Gradient overlay: opaque charcoal on left → semi-transparent right so vans read */}
+      {/* Gradient overlay: desktop — opaque charcoal left → transparent right */}
       <div
         aria-hidden
-        className="absolute inset-0"
+        className="absolute inset-0 hidden md:block"
         style={{
           background: [
             "linear-gradient(to right, rgba(26,26,29,0.88) 0%, rgba(26,26,29,0.80) 45%, rgba(26,26,29,0.22) 100%)",
             "linear-gradient(to bottom, rgba(26,26,29,0.3) 0%, transparent 30%)",
           ].join(", "),
+        }}
+      />
+      {/* Gradient overlay: mobile — uniform semi-dark so vans read through */}
+      <div
+        aria-hidden
+        className="absolute inset-0 md:hidden"
+        style={{
+          background: "linear-gradient(to bottom, rgba(26,26,29,0.72) 0%, rgba(26,26,29,0.58) 60%, rgba(26,26,29,0.85) 100%)",
         }}
       />
 
