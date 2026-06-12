@@ -21,7 +21,7 @@ export default function Mascot() {
               alt="Complete Electrical's littlest team member on the job van"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover object-[center_70%]"
             />
           </motion.div>
 
@@ -33,21 +33,19 @@ export default function Mascot() {
           >
             <div className="flex items-center gap-3 mb-5">
               <span className="block w-5 h-px bg-[#F36A21]" />
-              <span className="eyebrow">Family-run since 1970</span>
+              <span className="eyebrow">Our Mascot</span>
             </div>
             <h2
               className="text-[#1A1A1D] font-black leading-[0.92] tracking-[-0.03em] mb-6"
               style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
             >
-              More than just
+              Our biggest
               <br />
-              <span style={{ color: "#F36A21" }}>sparkies.</span>
+              <span style={{ color: "#F36A21" }}>supporter.</span>
             </h2>
             <p className="text-[#6A6764] text-base leading-relaxed max-w-md">
-              We&apos;re a local, family-run team that&apos;s looked after Canberra homes for over
-              50 years — and yes, even our littlest team member comes along for the ride.
-              When you call Complete Electrical, you get people who actually care about
-              the job and the people behind it.
+              He&apos;s no sparky, but he&apos;s at the workshop most days keeping the team honest.
+              We&apos;re an animal friendly crew, so your pets are in good hands too.
             </p>
           </motion.div>
 

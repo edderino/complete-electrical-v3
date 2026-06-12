@@ -34,7 +34,7 @@ export default function Gallery() {
             <span style={{ color: "#F36A21" }}>Canberra.</span>
           </h2>
           <p className="text-[#6A6764] text-sm leading-relaxed">
-            A snapshot of recent work — we&apos;ll keep this updated as new jobs roll in.
+            A snapshot of recent work. We&apos;ll keep this updated as new jobs roll in.
           </p>
         </motion.div>
 

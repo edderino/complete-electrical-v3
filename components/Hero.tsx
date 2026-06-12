@@ -33,7 +33,7 @@ export default function Hero() {
         />
       </motion.div>
 
-      {/* Gradient overlay: desktop — opaque charcoal left → transparent right */}
+      {/* Gradient overlay: desktop, opaque charcoal left to transparent right */}
       <div
         aria-hidden
         className="absolute inset-0 hidden md:block"
@@ -44,7 +44,7 @@ export default function Hero() {
           ].join(", "),
         }}
       />
-      {/* Gradient overlay: mobile — uniform semi-dark so vans read through */}
+      {/* Gradient overlay: mobile, uniform semi-dark so vans read through */}
       <div
         aria-hidden
         className="absolute inset-0 md:hidden"
@@ -60,7 +60,7 @@ export default function Hero() {
         style={{ background: "linear-gradient(to top, #232328 0%, transparent 100%)" }}
       />
 
-      {/* Text content — sits left, well clear of the stat bar */}
+      {/* Text content, sits left, well clear of the stat bar */}
       <div className="relative wrap flex-1 flex flex-col justify-center pt-24 pb-4 md:pt-28">
         <div className="max-w-lg">
 
@@ -71,7 +71,7 @@ export default function Hero() {
             className="flex items-center gap-3 mb-7"
           >
             <span className="block w-5 h-px bg-[#F36A21]" />
-            <span className="eyebrow">Canberra, ACT — Licensed &amp; Insured</span>
+            <span className="eyebrow">Canberra, ACT · Licensed &amp; Insured</span>
           </motion.div>
 
           <motion.h1
@@ -94,8 +94,8 @@ export default function Hero() {
             transition={{ duration: 0.55, delay: 0.22 }}
             className="text-[#B8B5B0] text-lg leading-relaxed max-w-sm mb-9"
           >
-            Residential and commercial electricians serving Canberra and surrounds.
-            24/7 emergency response, licensed and local since 1970.
+            Residential and commercial electricians trusted by Canberra for over 50 years.
+            600+ reviews, 4.8 stars, and the experience to get it done right the first time.
           </motion.p>
 
           <motion.div
@@ -122,7 +122,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Stat bar — anchored to bottom, separated from content by flex gap */}
+      {/* Stat bar, anchored to bottom, separated from content by flex gap */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

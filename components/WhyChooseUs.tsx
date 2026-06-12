@@ -8,25 +8,25 @@ const props = [
     icon: ThumbsUp,
     stat: "✓",
     heading: "Trusted across Canberra",
-    body: "We show up when we say we will, do the job properly, and leave your home or business tidy. No shortcuts, no surprises — just reliable electrical work you can count on.",
+    body: "We show up when we say we will, do the job properly, and leave your home or business tidy. No shortcuts, no surprises, just reliable electrical work you can count on.",
   },
   {
     icon: Clock,
     stat: "24/7",
     heading: "There when it matters",
-    body: "Electrical emergencies don't keep business hours. Our team is on call around the clock — no waiting until Monday.",
+    body: "Electrical emergencies don't keep business hours. Our team is on call around the clock. No waiting until Monday.",
   },
   {
     icon: CalendarDays,
     stat: "1970",
     heading: "Serving Canberra since 1970",
-    body: "Over 50 years of electrical work across the ACT. That kind of history only builds up one way — by doing the job right, every time.",
+    body: "Over 50 years of electrical work across the ACT. That kind of history only builds up one way, by doing the job right, every time.",
   },
   {
     icon: ShieldCheck,
     stat: "×2",
     heading: "Licensed in ACT & NSW",
-    body: "Fully licensed in both territories and comprehensively insured. Every job meets Australian Standards and local regulations — guaranteed.",
+    body: "Fully licensed in both territories and comprehensively insured. Every job meets Australian Standards and local regulations, guaranteed.",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
               <span style={{ color: "#F36A21" }}>reputation.</span>
             </h2>
             <p className="text-[#888580] text-sm leading-relaxed max-w-xs">
-              Trusted Canberra electricians. The work speaks for itself.
+              600+ reviews and 50+ years on the tools. The track record speaks for itself.
             </p>
 
             <a

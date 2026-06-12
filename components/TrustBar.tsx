@@ -2,14 +2,13 @@
 
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
-import { ShieldCheck, Clock, MapPin, BadgeCheck, CalendarDays } from "lucide-react";
+import { Receipt, Sparkles, Timer, Users } from "lucide-react";
 
 const trustPills = [
-  { icon: BadgeCheck,    label: "Licensed ACT & NSW" },
-  { icon: ShieldCheck,   label: "Fully Insured" },
-  { icon: Clock,         label: "24/7 Emergency Callout" },
-  { icon: MapPin,        label: "Local to Canberra" },
-  { icon: CalendarDays,  label: "Since 1970" },
+  { icon: Receipt,  label: "Upfront quotes, no surprises" },
+  { icon: Sparkles, label: "Tidy, respectful work" },
+  { icon: Timer,    label: "Same-day response" },
+  { icon: Users,    label: "One trusted team" },
 ];
 
 export default function TrustBar() {
@@ -19,7 +18,7 @@ export default function TrustBar() {
   return (
     <section ref={ref} id="trust" className="bg-[#232328] py-10 md:py-12 border-b border-white/6">
       <div className="wrap">
-        <div className="flex flex-wrap gap-2.5">
+        <div className="flex flex-wrap justify-center gap-2.5">
           {trustPills.map(({ icon: Icon, label }, i) => (
             <motion.div
               key={label}

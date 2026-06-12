@@ -23,15 +23,15 @@ export default function FinalCTA() {
               className="text-white font-black leading-[0.92] tracking-[-0.03em]"
               style={{ fontSize: "clamp(2.6rem, 5vw, 4.5rem)" }}
             >
-              Need a licensed
+              Let&apos;s get it
               <br />
-              <span style={{ color: "#F36A21" }}>electrician?</span>
+              <span style={{ color: "#F36A21" }}>sorted.</span>
             </h2>
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-[#888580] text-base leading-relaxed">
-              Available 24/7 for emergencies. Fast to respond for all scheduled work.
-              Serving Canberra, ACT &amp; surrounding regions.
+              Join 600+ Canberra locals who trust Complete Electrical. Over 50 years
+              keeping homes and businesses powered across Canberra, ACT &amp; surrounding regions.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-2">
               <a

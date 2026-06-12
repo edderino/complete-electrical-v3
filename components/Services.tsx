@@ -7,7 +7,7 @@ const services = [
   {
     icon: Home,
     title: "Residential",
-    desc: "Switchboards, power points, lighting, smoke alarms, EV charging, data cabling — everything your home needs, done to code.",
+    desc: "Switchboards, power points, lighting, smoke alarms, EV charging and data cabling. Everything your home needs, done to code.",
     cta: "Get a Home Quote",
   },
   {
@@ -19,8 +19,8 @@ const services = [
   {
     icon: Zap,
     title: "Emergency & Repairs",
-    desc: "Power out? Fault tripped? We respond fast, around the clock — no waiting until Monday.",
-    cta: "Call Now — 24/7",
+    desc: "Power out? Fault tripped? We respond fast, around the clock. No waiting until Monday.",
+    cta: "Call Now, 24/7",
     href: "tel:0262515444",
     highlight: true,
   },
@@ -37,7 +37,7 @@ export default function Services() {
     <section id="services" className="bg-[#F5F4F2] py-24 md:py-32">
       <div className="wrap">
 
-        {/* Header — left-aligned, not centred */}
+        {/* Header, left-aligned */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,16 +53,16 @@ export default function Services() {
             className="text-[#1A1A1D] section-heading mb-4"
             style={{ fontSize: "clamp(2.4rem, 5vw, 4rem)" }}
           >
-            Every electrical job
+            Electrical work,
             <br />
-            covered.
+            done properly.
           </h2>
           <p className="text-[#6A6764] text-base leading-relaxed">
-            Predominantly residential. Some commercial. Planned or urgent — across Canberra and surrounds.
+            Residential and commercial electrical across Canberra. Switchboards, lighting, EV chargers, and more. Planned or urgent, we get it done.
           </p>
         </motion.div>
 
-        {/* Service cards — 2×2 grid on desktop, stacked on mobile */}
+        {/* Service cards, 2x2 grid on desktop, stacked on mobile */}
         <div className="grid sm:grid-cols-2 gap-px bg-[#E8E5E0]">
           {services.map((svc, i) => {
             const Icon = svc.icon;

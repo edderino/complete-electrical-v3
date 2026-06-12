@@ -55,7 +55,7 @@ export default function Contact() {
               <span style={{ color: "#F36A21" }}>about your job.</span>
             </h2>
             <p className="text-[#6A6764] text-base leading-relaxed mb-10 max-w-sm">
-              Fill in the form and we&apos;ll get back to you fast. For urgent work, call us directly — we respond quickly.
+              Fill in the form and we&apos;ll get back to you fast. For urgent work, call us directly and we&apos;ll respond quickly.
             </p>
 
             {/* Click-to-call */}
@@ -68,7 +68,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-white font-bold tracking-tight text-lg leading-tight">02 6251 5444</p>
-                <p className="text-[#888580] text-xs mt-0.5">Call us — Mon–Fri 7am–5pm · 24/7 emergency</p>
+                <p className="text-[#888580] text-xs mt-0.5">Call us. Mon to Fri 7am to 5pm · 24/7 emergency</p>
               </div>
             </a>
 
@@ -83,7 +83,7 @@ export default function Contact() {
               <div className="flex items-start gap-3">
                 <Clock size={14} className="text-[#F36A21] mt-0.5 flex-shrink-0" />
                 <div className="text-[#6A6764] text-sm leading-relaxed">
-                  Mon–Fri 7am–5pm<br />
+                  Mon to Fri 7am to 5pm<br />
                   <span className="text-[#F36A21] font-medium">24/7 emergency callout available</span>
                 </div>
               </div>
@@ -198,7 +198,7 @@ export default function Contact() {
                 </button>
 
                 <p className="text-[#888580] text-xs mt-1">
-                  We respond fast — usually within a few hours during business hours.
+                  We respond fast, usually within a few hours during business hours.
                 </p>
               </form>
             )}
