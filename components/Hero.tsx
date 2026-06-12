@@ -134,7 +134,7 @@ export default function Hero() {
             { val: "600+", label: "Google Reviews" },
             { val: "4.8★", label: "Average Rating" },
             { val: "24/7", label: "Emergency Callout" },
-            { val: "$0",   label: "Call-Out Fee*" },
+            { val: "1970", label: "Est. Canberra" },
           ].map(({ val, label }) => (
             <div key={label} className="md:px-8 first:pl-0 last:pr-0">
               <p
@@ -147,9 +147,6 @@ export default function Hero() {
             </div>
           ))}
         </div>
-        <p className="text-[#555250] text-[0.625rem] mt-3 tracking-wide">
-          *Call-out fee applies only to jobs that proceed.
-        </p>
       </motion.div>
     </section>
   );

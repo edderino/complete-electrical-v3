@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ThumbsUp, Clock, DollarSign, ShieldCheck } from "lucide-react";
+import { ThumbsUp, Clock, CalendarDays, ShieldCheck } from "lucide-react";
 
 const props = [
   {
@@ -17,10 +17,10 @@ const props = [
     body: "Electrical emergencies don't keep business hours. Our team is on call around the clock — no waiting until Monday.",
   },
   {
-    icon: DollarSign,
-    stat: "$0",
-    heading: "No call-out fee surprises",
-    body: "We don't charge a call-out fee on jobs that proceed. You get an honest quote upfront — no hidden costs, no nasty surprises on the invoice.",
+    icon: CalendarDays,
+    stat: "1970",
+    heading: "Serving Canberra since 1970",
+    body: "Over 50 years of electrical work across the ACT. That kind of history only builds up one way — by doing the job right, every time.",
   },
   {
     icon: ShieldCheck,

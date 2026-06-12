@@ -2,14 +2,14 @@
 
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
-import { ShieldCheck, Clock, MapPin, BadgeCheck, Zap } from "lucide-react";
+import { ShieldCheck, Clock, MapPin, BadgeCheck, CalendarDays } from "lucide-react";
 
 const trustPills = [
-  { icon: BadgeCheck, label: "Licensed ACT & NSW" },
-  { icon: ShieldCheck, label: "Fully Insured" },
-  { icon: Clock,       label: "24/7 Emergency Callout" },
-  { icon: MapPin,      label: "Local to Canberra" },
-  { icon: Zap,         label: "$0 Call-Out Fee*" },
+  { icon: BadgeCheck,    label: "Licensed ACT & NSW" },
+  { icon: ShieldCheck,   label: "Fully Insured" },
+  { icon: Clock,         label: "24/7 Emergency Callout" },
+  { icon: MapPin,        label: "Local to Canberra" },
+  { icon: CalendarDays,  label: "Since 1970" },
 ];
 
 export default function TrustBar() {
@@ -33,9 +33,6 @@ export default function TrustBar() {
             </motion.div>
           ))}
         </div>
-        <p className="text-[#555250] text-[0.625rem] mt-4 tracking-wide">
-          *Call-out fee applies only to jobs that proceed.
-        </p>
       </div>
     </section>
   );

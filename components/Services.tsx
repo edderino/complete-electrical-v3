@@ -19,7 +19,7 @@ const services = [
   {
     icon: Zap,
     title: "Emergency & Repairs",
-    desc: "Power out? Fault tripped? We respond fast, around the clock. No extra call-out fee when the job proceeds.",
+    desc: "Power out? Fault tripped? We respond fast, around the clock — no waiting until Monday.",
     cta: "Call Now — 24/7",
     href: "tel:0262515444",
     highlight: true,
@@ -27,7 +27,7 @@ const services = [
   {
     icon: MoreHorizontal,
     title: "All Your Electrical Needs",
-    desc: "Solar & battery, air conditioning, appliance installation, and anything else electrical. If it runs on current, we handle it.",
+    desc: "Solar & battery, air conditioning, data cabling, and more. If it runs on current, we handle it.",
     cta: "Ask Us Anything",
   },
 ];
@@ -58,7 +58,7 @@ export default function Services() {
             covered.
           </h2>
           <p className="text-[#6A6764] text-base leading-relaxed">
-            Residential and commercial. Planned or urgent. From Canberra and surrounds.
+            Predominantly residential. Some commercial. Planned or urgent — across Canberra and surrounds.
           </p>
         </motion.div>
 
