@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ThumbsUp, Clock, CalendarDays, ShieldCheck } from "lucide-react";
+import { ThumbsUp, Clock, Star, ShieldCheck } from "lucide-react";
 
 const props = [
   {
     icon: ThumbsUp,
-    stat: "✓",
+    stat: "4.8★",
     heading: "Trusted across Canberra",
     body: "We show up when we say we will, do the job properly, and leave your home or business tidy. No shortcuts, no surprises, just reliable electrical work you can count on.",
   },
@@ -17,16 +17,16 @@ const props = [
     body: "Electrical emergencies don't keep business hours. Our team is on call around the clock. No waiting until Monday.",
   },
   {
-    icon: CalendarDays,
-    stat: "1970",
-    heading: "Serving Canberra since 1970",
-    body: "Over 50 years of electrical work across the ACT. That kind of history only builds up one way, by doing the job right, every time.",
+    icon: Star,
+    stat: "600+",
+    heading: "Hundreds of happy locals",
+    body: "Over 600 reviews and a 4.8 star average from Canberra homes and businesses. The kind of reputation you only earn by doing the job right.",
   },
   {
     icon: ShieldCheck,
     stat: "×2",
     heading: "Licensed in ACT & NSW",
-    body: "Fully licensed in both territories and comprehensively insured. Every job meets Australian Standards and local regulations, guaranteed.",
+    body: "Fully licensed in both territories and comprehensively insured. Every job meets Australian Standards and local regulations.",
   },
 ];
 

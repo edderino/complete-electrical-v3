@@ -28,7 +28,7 @@ const services = [
     icon: MoreHorizontal,
     title: "All Your Electrical Needs",
     desc: "Solar & battery, air conditioning, data cabling, and more. If it runs on current, we handle it.",
-    cta: "Ask Us Anything",
+    cta: "Get a Quote",
   },
 ];
 
