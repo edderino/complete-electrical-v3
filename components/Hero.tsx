@@ -95,7 +95,7 @@ export default function Hero() {
             className="text-[#B8B5B0] text-lg leading-relaxed max-w-sm mb-9"
           >
             Residential and commercial electricians serving Canberra and surrounds.
-            24/7 emergency. $0 call-out fee on proceeding jobs.
+            24/7 emergency response, licensed and local since 1970.
           </motion.p>
 
           <motion.div

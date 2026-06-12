@@ -36,7 +36,7 @@ const schema = {
 
 export const metadata: Metadata = {
   title: "Complete Electrical Service | Canberra Electricians | ACT & NSW Licensed",
-  description: "Canberra's trusted electrical contractor. Residential & commercial, 24/7 emergency callout, $0 call-out fee on proceeding jobs. 600+ Google reviews, 4.8★ average. ACT Lic 20231100 · NSW Lic 78757C.",
+  description: "Canberra's trusted electrical contractor. Residential & commercial, 24/7 emergency callout. 600+ Google reviews, 4.8★ average. ACT Lic 20231100 · NSW Lic 78757C.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
