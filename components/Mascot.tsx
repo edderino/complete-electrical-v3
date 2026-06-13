@@ -17,7 +17,7 @@ export default function Mascot() {
             className="relative aspect-[4/3] rounded-sm overflow-hidden shadow-lg"
           >
             <Image
-              src="/20250829_132351__1_.jpg"
+              src="/completemascot.jpg"
               alt="Complete Electrical's littlest team member on the job van"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
