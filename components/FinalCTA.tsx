@@ -5,7 +5,7 @@ import { Phone, FileText } from "lucide-react";
 
 export default function FinalCTA() {
   return (
-    <section className="bg-[#1A1A1D] py-24 md:py-32 border-t border-white/6">
+    <section className="bg-[#191D2A] py-24 md:py-32 border-t border-white/6">
       <div className="wrap">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,8 +30,8 @@ export default function FinalCTA() {
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-[#888580] text-base leading-relaxed">
-              Join 600+ Canberra locals who trust Complete Electrical. Over 50 years
-              keeping homes and businesses powered across Canberra, ACT &amp; surrounding regions.
+              Join the 600+ Canberra locals who trust Complete Electrical. Call now for
+              fast, reliable service from a team that&apos;s kept the region powered for over 50 years.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-2">
               <a

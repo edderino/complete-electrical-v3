@@ -38,7 +38,9 @@ export default function Footer() {
             <div className="flex gap-2">
               {/* Replace href with real social URLs */}
               <a
-                href="#"
+                href="https://www.facebook.com/share/1bzi8ptZU9/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="w-8 h-8 border border-white/10 hover:border-[#F36A21]/50 flex items-center justify-center text-[#555250] hover:text-[#F36A21] transition-all duration-200 cursor-pointer"
               >
@@ -47,7 +49,9 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/completeelectricalservice.act?igsh=Zms1c3ExdGc1emQ3"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="w-8 h-8 border border-white/10 hover:border-[#F36A21]/50 flex items-center justify-center text-[#555250] hover:text-[#F36A21] transition-all duration-200 cursor-pointer"
               >

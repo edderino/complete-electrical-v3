@@ -33,7 +33,7 @@ function Stars({ count }: { count: number }) {
 
 export default function Testimonials() {
   return (
-    <section id="reviews" className="bg-[#232328] py-24 md:py-32">
+    <section id="reviews" className="bg-[#252B3D] py-24 md:py-32">
       <div className="wrap">
 
         <motion.div
@@ -65,7 +65,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: i * 0.1 }}
-              className="bg-[#232328] p-8 md:p-10 flex flex-col gap-5"
+              className="bg-[#252B3D] p-8 md:p-10 flex flex-col gap-5"
             >
               <Stars count={t.stars} />
               <p className="text-[#C8C5C0] text-sm leading-relaxed flex-1">

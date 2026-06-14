@@ -32,7 +32,7 @@ const props = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="bg-[#1A1A1D] py-24 md:py-32">
+    <section id="why-us" className="bg-[#191D2A] py-24 md:py-32">
       <div className="wrap">
 
         <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20 items-start">

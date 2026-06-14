@@ -36,7 +36,7 @@ export default function Mascot() {
               <span className="eyebrow">Our Mascot</span>
             </div>
             <h2
-              className="text-[#1A1A1D] font-black leading-[0.92] tracking-[-0.03em] mb-6"
+              className="text-[#191D2A] font-black leading-[0.92] tracking-[-0.03em] mb-6"
               style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
             >
               Our biggest

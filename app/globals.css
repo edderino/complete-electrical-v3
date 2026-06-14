@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-charcoal:        #1A1A1D;
-  --color-charcoal-mid:    #232328;
+  --color-charcoal:        #191D2A;
+  --color-charcoal-mid:    #252B3D;
   --color-charcoal-ui:     #2E2E35;
   --color-charcoal-border: #38383F;
   --color-orange:          #F36A21;
@@ -22,7 +22,7 @@
 
   body {
     font-family: 'Inter', system-ui, sans-serif;
-    background: #1A1A1D;
+    background: #191D2A;
     color: #D8D5D0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,7 +30,7 @@
 
   ::selection {
     background: #F36A21;
-    color: #1A1A1D;
+    color: #191D2A;
   }
 
   * { box-sizing: border-box; }

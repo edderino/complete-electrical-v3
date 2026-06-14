@@ -26,7 +26,7 @@ export default function Gallery() {
             <span className="eyebrow">Our work</span>
           </div>
           <h2
-            className="text-[#1A1A1D] section-heading mb-4"
+            className="text-[#191D2A] section-heading mb-4"
             style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.5rem)" }}
           >
             Recent jobs around

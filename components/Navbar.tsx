@@ -25,7 +25,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-[#1A1A1D]/96 backdrop-blur-xl border-b border-white/8 shadow-2xl shadow-black/50"
+            ? "bg-[#191D2A]/96 backdrop-blur-xl border-b border-white/8 shadow-2xl shadow-black/50"
             : "bg-transparent"
         }`}
       >
@@ -87,7 +87,7 @@ export default function Navbar() {
             className="absolute inset-0 bg-black/70 backdrop-blur-sm"
             onClick={() => setMobileOpen(false)}
           />
-          <div className="absolute top-0 right-0 bottom-0 w-[min(20rem,100vw)] bg-[#1A1A1D] border-l border-white/8 flex flex-col">
+          <div className="absolute top-0 right-0 bottom-0 w-[min(20rem,100vw)] bg-[#191D2A] border-l border-white/8 flex flex-col">
             <div className="flex items-center justify-between px-6 h-[4.5rem] border-b border-white/8">
               <div className="flex items-center gap-2.5">
                 <div className="w-7 h-7 bg-[#F36A21] flex items-center justify-center">

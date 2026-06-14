@@ -6,7 +6,7 @@ const schema = {
   "@type": "ElectricalContractor",
   "name": "Complete Electrical Service",
   "telephone": "+61262515444",
-  "url": "https://completeelectrical.com.au",
+  "url": "https://completeelectricalservice.com.au",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Unit 4/16 Grimwade St",

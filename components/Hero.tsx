@@ -15,8 +15,8 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex flex-col overflow-hidden"
-      style={{ backgroundColor: "#1A1A1D" }}
+      className="relative min-h-[88vh] md:min-h-screen flex flex-col overflow-hidden"
+      style={{ backgroundColor: "#191D2A" }}
     >
       {/* Full-bleed fleet photo with subtle parallax */}
       <motion.div
@@ -25,10 +25,10 @@ export default function Hero() {
         style={{ y: bgY }}
       >
         <div
-          className="absolute inset-0 scale-[1.08] bg-cover [background-position:72%_center] md:[background-position:center_center]"
+          className="absolute inset-0 scale-[1.08] bg-cover [background-position:60%_center] md:[background-position:center_center]"
           style={{
             backgroundImage: "url('/bg-1280x853-1.webp')",
-            backgroundColor: "#1A1A1D",
+            backgroundColor: "#191D2A",
           }}
         />
       </motion.div>
@@ -39,8 +39,8 @@ export default function Hero() {
         className="absolute inset-0 hidden md:block"
         style={{
           background: [
-            "linear-gradient(to right, rgba(26,26,29,0.88) 0%, rgba(26,26,29,0.80) 45%, rgba(26,26,29,0.22) 100%)",
-            "linear-gradient(to bottom, rgba(26,26,29,0.3) 0%, transparent 30%)",
+            "linear-gradient(to right, rgba(25,29,42,0.88) 0%, rgba(25,29,42,0.80) 45%, rgba(25,29,42,0.22) 100%)",
+            "linear-gradient(to bottom, rgba(25,29,42,0.3) 0%, transparent 30%)",
           ].join(", "),
         }}
       />
@@ -49,7 +49,7 @@ export default function Hero() {
         aria-hidden
         className="absolute inset-0 md:hidden"
         style={{
-          background: "linear-gradient(to bottom, rgba(26,26,29,0.72) 0%, rgba(26,26,29,0.58) 60%, rgba(26,26,29,0.85) 100%)",
+          background: "linear-gradient(to bottom, rgba(25,29,42,0.82) 0%, rgba(25,29,42,0.72) 45%, rgba(25,29,42,0.92) 100%)",
         }}
       />
 
@@ -57,7 +57,7 @@ export default function Hero() {
       <div
         aria-hidden
         className="absolute inset-x-0 bottom-0 h-40 pointer-events-none"
-        style={{ background: "linear-gradient(to top, #232328 0%, transparent 100%)" }}
+        style={{ background: "linear-gradient(to top, #252B3D 0%, transparent 100%)" }}
       />
 
       {/* Text content, sits left, well clear of the stat bar */}
@@ -92,7 +92,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.22 }}
-            className="text-[#B8B5B0] text-lg leading-relaxed max-w-sm mb-9"
+            className="text-[#D8D5D0] md:text-[#B8B5B0] text-lg leading-relaxed max-w-sm mb-9"
           >
             Residential and commercial electricians trusted by Canberra for over 50 years.
             600+ reviews, 4.8 stars, and the experience to get it done right the first time.

@@ -19,7 +19,7 @@ const services = [
   {
     icon: Zap,
     title: "Emergency & Repairs",
-    desc: "Power out? Fault tripped? We respond fast, around the clock. No waiting until Monday.",
+    desc: "Power out? Fault tripped? We respond fast, day or night, so you're never left waiting.",
     cta: "Call Now, 24/7",
     href: "tel:0262515444",
     highlight: true,
@@ -50,7 +50,7 @@ export default function Services() {
             <span className="eyebrow">What we do</span>
           </div>
           <h2
-            className="text-[#1A1A1D] section-heading mb-4"
+            className="text-[#191D2A] section-heading mb-4"
             style={{ fontSize: "clamp(2.4rem, 5vw, 4rem)" }}
           >
             Electrical work,
@@ -75,7 +75,7 @@ export default function Services() {
                 transition={{ duration: 0.45, delay: i * 0.08 }}
                 className={`group relative p-10 md:p-12 flex flex-col justify-between min-h-[280px] cursor-pointer transition-colors duration-300 ${
                   svc.highlight
-                    ? "bg-[#1A1A1D] hover:bg-[#232328]"
+                    ? "bg-[#191D2A] hover:bg-[#252B3D]"
                     : "bg-white hover:bg-[#F9F8F6]"
                 }`}
               >
@@ -100,7 +100,7 @@ export default function Services() {
 
                   <h3
                     className={`font-bold text-xl mb-3 leading-tight ${
-                      svc.highlight ? "text-white" : "text-[#1A1A1D]"
+                      svc.highlight ? "text-white" : "text-[#191D2A]"
                     }`}
                   >
                     {svc.title}
@@ -119,7 +119,7 @@ export default function Services() {
                   className={`mt-8 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.08em] uppercase transition-all duration-200 cursor-pointer group-hover:gap-3 ${
                     svc.highlight
                       ? "text-[#F36A21] hover:text-white"
-                      : "text-[#1A1A1D] hover:text-[#F36A21]"
+                      : "text-[#191D2A] hover:text-[#F36A21]"
                   }`}
                 >
                   {svc.cta}
