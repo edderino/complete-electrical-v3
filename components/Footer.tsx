@@ -15,7 +15,7 @@ const quickLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#141416] border-t border-white/6">
+    <footer className="bg-[#12151F] border-t border-white/6">
       <div className="wrap py-14 md:py-18">
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
@@ -142,7 +142,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/6 pt-7 flex flex-col sm:flex-row justify-between gap-3">
-          <p className="text-[#3A3835] text-xs leading-relaxed">
+          <p className="text-[#3A3D4D] text-xs leading-relaxed">
             © {new Date().getFullYear()}{" "}Complete Electrical Service &nbsp;·&nbsp;
             ABN 60&nbsp;169&nbsp;748&nbsp;592 &nbsp;·&nbsp;
             ACT Lic 20231100 &nbsp;·&nbsp;
@@ -150,7 +150,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-5">
             {["Privacy Policy", "Terms"].map((l) => (
-              <a key={l} href="#" className="text-[#3A3835] hover:text-[#888580] text-xs transition-colors cursor-pointer">
+              <a key={l} href="#" className="text-[#3A3D4D] hover:text-[#888580] text-xs transition-colors cursor-pointer">
                 {l}
               </a>
             ))}
