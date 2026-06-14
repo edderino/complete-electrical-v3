@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-[88vh] md:min-h-screen flex flex-col overflow-hidden"
+      className="relative min-h-[92vh] md:min-h-screen flex flex-col overflow-hidden"
       style={{ backgroundColor: "#191D2A" }}
     >
       {/* Full-bleed fleet photo with subtle parallax */}
@@ -25,7 +25,7 @@ export default function Hero() {
         style={{ y: bgY }}
       >
         <div
-          className="absolute inset-0 scale-[1.08] bg-cover [background-position:60%_center] md:[background-position:center_center]"
+          className="absolute inset-0 scale-[1.08] bg-cover [background-position:center_bottom] md:[background-position:center_center]"
           style={{
             backgroundImage: "url('/bg-1280x853-1.webp')",
             backgroundColor: "#191D2A",
@@ -49,7 +49,7 @@ export default function Hero() {
         aria-hidden
         className="absolute inset-0 md:hidden"
         style={{
-          background: "linear-gradient(to bottom, rgba(25,29,42,0.82) 0%, rgba(25,29,42,0.72) 45%, rgba(25,29,42,0.92) 100%)",
+          background: "linear-gradient(to bottom, rgba(25,29,42,0.92) 0%, rgba(25,29,42,0.78) 30%, rgba(25,29,42,0.55) 60%, rgba(25,29,42,0.70) 100%)",
         }}
       />
 

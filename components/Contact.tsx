@@ -4,6 +4,9 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Phone, MapPin, Clock, Send } from "lucide-react";
 
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY"; // TODO: paste Web3Forms access key once destination email is set
+
 const services = [
   "Residential Electrical",
   "Commercial Electrical",
@@ -19,14 +22,44 @@ const services = [
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    setError(false);
+
+    const data = new FormData(e.currentTarget);
+    const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: "New enquiry from Complete Electrical website",
+      name: data.get("name"),
+      phone: data.get("phone"),
+      email: data.get("email"),
+      service: data.get("service"),
+      message: data.get("message"),
+    };
+
+    try {
+      const res = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      const result = await res.json();
+      if (res.ok && result.success) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1000);
+    }
   }
 
   return (
@@ -196,6 +229,14 @@ export default function Contact() {
                   )}
                   {loading ? "Sending…" : "Send Enquiry"}
                 </button>
+
+                {error && (
+                  <p className="text-[#C0392B] text-sm mt-1 leading-relaxed">
+                    Something went wrong. Please call us on{" "}
+                    <a href="tel:0262515444" className="font-semibold underline cursor-pointer">02 6251 5444</a>{" "}
+                    and we&apos;ll sort it.
+                  </p>
+                )}
 
                 <p className="text-[#888580] text-xs mt-1">
                   We respond fast, usually within a few hours during business hours.
