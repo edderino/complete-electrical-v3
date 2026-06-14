@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
+import Image from "next/image";
 import { Phone, FileText } from "lucide-react";
 
 export default function Hero() {
@@ -18,14 +19,14 @@ export default function Hero() {
       className="relative min-h-[92vh] md:min-h-screen flex flex-col overflow-hidden"
       style={{ backgroundColor: "#191D2A" }}
     >
-      {/* Full-bleed fleet photo with subtle parallax */}
+      {/* Full-bleed fleet photo with subtle parallax — desktop only */}
       <motion.div
         aria-hidden
-        className="absolute inset-0 will-change-transform"
+        className="absolute inset-0 will-change-transform hidden md:block"
         style={{ y: bgY }}
       >
         <div
-          className="absolute inset-0 scale-[1.08] bg-cover [background-position:center_bottom] md:[background-position:center_center]"
+          className="absolute inset-0 scale-[1.08] bg-cover [background-position:center_center]"
           style={{
             backgroundImage: "url('/bg-1280x853-1.webp')",
             backgroundColor: "#191D2A",
@@ -44,24 +45,16 @@ export default function Hero() {
           ].join(", "),
         }}
       />
-      {/* Gradient overlay: mobile, uniform semi-dark so vans read through */}
-      <div
-        aria-hidden
-        className="absolute inset-0 md:hidden"
-        style={{
-          background: "linear-gradient(to bottom, rgba(25,29,42,0.92) 0%, rgba(25,29,42,0.78) 30%, rgba(25,29,42,0.55) 60%, rgba(25,29,42,0.70) 100%)",
-        }}
-      />
 
-      {/* Bottom fade into TrustBar */}
+      {/* Bottom fade into TrustBar — desktop only */}
       <div
         aria-hidden
-        className="absolute inset-x-0 bottom-0 h-40 pointer-events-none"
+        className="absolute inset-x-0 bottom-0 h-40 pointer-events-none hidden md:block"
         style={{ background: "linear-gradient(to top, #252B3D 0%, transparent 100%)" }}
       />
 
-      {/* Text content, sits left, well clear of the stat bar */}
-      <div className="relative wrap flex-1 flex flex-col justify-center pt-24 pb-4 md:pt-28">
+      {/* Text content — top-aligned on mobile, centred over photo on desktop */}
+      <div className="relative wrap flex flex-col justify-start pt-28 pb-8 md:flex-1 md:justify-center md:pt-28 md:pb-4">
         <div className="max-w-lg">
 
           <motion.div
@@ -120,6 +113,17 @@ export default function Hero() {
             </a>
           </motion.div>
         </div>
+      </div>
+
+      {/* Mobile-only fleet photo band — clean, full-width, no text overlap */}
+      <div className="md:hidden relative w-full h-60 overflow-hidden">
+        <Image
+          src="/bg-1280x853-1.webp"
+          alt="Complete Electrical service van fleet"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
       </div>
 
       {/* Stat bar, anchored to bottom, separated from content by flex gap */}
