@@ -124,7 +124,8 @@ export default function Hero() {
       {/* ===================== MOBILE (below md) ===================== */}
       <div className="md:hidden">
         {/* 1. Fleet photo leads, with eyebrow + headline overlaid */}
-        <div className="relative w-full h-[72vh] overflow-hidden">
+        {/* Native aspect ratio so the wide photo shows in full — never cropped or zoomed */}
+        <div className="relative w-full aspect-[1280/853] overflow-hidden">
           <Image
             src="/bg-1280x853-1.webp"
             alt="Complete Electrical service van fleet"
@@ -136,22 +137,22 @@ export default function Hero() {
           <div
             aria-hidden
             className="absolute inset-0"
-            style={{ background: "linear-gradient(to bottom, rgba(25,29,42,0.35) 0%, rgba(25,29,42,0.55) 50%, rgba(25,29,42,0.88) 100%)" }}
+            style={{ background: "linear-gradient(to bottom, rgba(25,29,42,0.30) 0%, rgba(25,29,42,0.50) 45%, rgba(25,29,42,0.85) 100%)" }}
           />
-          <div className="absolute inset-0 wrap flex flex-col justify-end pb-8">
-            <div className="flex items-center gap-3 mb-4">
+          <div className="absolute inset-0 wrap flex flex-col justify-end pb-5">
+            <div className="flex items-center gap-3 mb-2.5">
               <span className="block w-5 h-px bg-[#F36A21]" />
               <span className="eyebrow">Canberra, ACT · Licensed &amp; Insured</span>
             </div>
             <h1
               className="text-white font-black leading-[0.95] tracking-[-0.035em]"
-              style={{ fontSize: "clamp(2.4rem, 9vw, 3.2rem)" }}
+              style={{ fontSize: "clamp(1.7rem, 7vw, 2.4rem)" }}
             >
               Electrical done <span style={{ color: "#F36A21" }}>right.</span>
               <br />
               Every time.
             </h1>
-            <p className="text-[#E4E1DC] text-base leading-relaxed mt-5 max-w-md">
+            <p className="text-[#E4E1DC] text-sm leading-snug mt-2.5 max-w-md">
               Residential and commercial electricians trusted by Canberra for over 50 years.
               600+ reviews, 4.8 stars, and the experience to get it done right the first time.
             </p>
