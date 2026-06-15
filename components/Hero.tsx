@@ -124,7 +124,7 @@ export default function Hero() {
       {/* ===================== MOBILE (below md) ===================== */}
       <div className="md:hidden">
         {/* 1. Fleet photo leads, with eyebrow + headline overlaid */}
-        <div className="relative w-full h-[55vh] overflow-hidden">
+        <div className="relative w-full h-[72vh] overflow-hidden">
           <Image
             src="/bg-1280x853-1.webp"
             alt="Complete Electrical service van fleet"
@@ -136,9 +136,9 @@ export default function Hero() {
           <div
             aria-hidden
             className="absolute inset-0"
-            style={{ background: "linear-gradient(to bottom, rgba(25,29,42,0.4) 0%, rgba(25,29,42,0.75) 100%)" }}
+            style={{ background: "linear-gradient(to bottom, rgba(25,29,42,0.35) 0%, rgba(25,29,42,0.55) 50%, rgba(25,29,42,0.88) 100%)" }}
           />
-          <div className="absolute inset-0 wrap flex flex-col justify-end pb-7">
+          <div className="absolute inset-0 wrap flex flex-col justify-end pb-8">
             <div className="flex items-center gap-3 mb-4">
               <span className="block w-5 h-px bg-[#F36A21]" />
               <span className="eyebrow">Canberra, ACT · Licensed &amp; Insured</span>
@@ -151,16 +151,15 @@ export default function Hero() {
               <br />
               Every time.
             </h1>
+            <p className="text-[#E4E1DC] text-base leading-relaxed mt-5 max-w-md">
+              Residential and commercial electricians trusted by Canberra for over 50 years.
+              600+ reviews, 4.8 stars, and the experience to get it done right the first time.
+            </p>
           </div>
         </div>
 
-        {/* 2. Below the photo, on solid navy: subtext, buttons, stats */}
+        {/* 2. Below the photo, on solid navy: buttons, stats */}
         <div className="wrap pt-8 pb-10">
-          <p className="text-[#D8D5D0] text-lg leading-relaxed mb-7">
-            Residential and commercial electricians trusted by Canberra for over 50 years.
-            600+ reviews, 4.8 stars, and the experience to get it done right the first time.
-          </p>
-
           <div className="flex flex-col gap-3 mb-9">
             <a
               href="#contact"
