@@ -32,7 +32,7 @@ export default function Mascot() {
             transition={{ duration: 0.55, delay: 0.1 }}
           >
             <div className="flex items-center gap-3 mb-5">
-              <span className="block w-5 h-px bg-[#F36A21]" />
+              <span className="block w-5 h-px bg-[var(--color-electric)]" />
               <span className="eyebrow">Our Mascot</span>
             </div>
             <h2

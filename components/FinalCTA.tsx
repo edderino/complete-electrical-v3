@@ -5,7 +5,7 @@ import { Phone, FileText } from "lucide-react";
 
 export default function FinalCTA() {
   return (
-    <section className="bg-[#191D2A] py-24 md:py-32 border-t border-white/6">
+    <section className="bg-[var(--color-charcoal)] py-24 md:py-32 border-t border-white/6">
       <div className="wrap">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +16,7 @@ export default function FinalCTA() {
         >
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <span className="block w-5 h-px bg-[#F36A21]" />
+              <span className="block w-5 h-px bg-[var(--color-electric)]" />
               <span className="eyebrow">Ready to get started?</span>
             </div>
             <h2
@@ -25,7 +25,7 @@ export default function FinalCTA() {
             >
               Let&apos;s get it
               <br />
-              <span style={{ color: "#F36A21" }}>sorted.</span>
+              <span style={{ color: "var(--color-orange)" }}>sorted.</span>
             </h2>
           </div>
           <div className="flex flex-col gap-4">
@@ -36,14 +36,14 @@ export default function FinalCTA() {
             <div className="flex flex-col sm:flex-row gap-3 mt-2">
               <a
                 href="tel:0262515444"
-                className="flex items-center justify-center gap-2 bg-[#F36A21] hover:bg-[#D45B1A] text-white font-bold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-colors duration-200 cursor-pointer"
+                className="flex items-center justify-center gap-2 bg-[var(--color-orange)] hover:bg-[var(--color-orange-dim)] text-white font-bold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-colors duration-200 cursor-pointer"
               >
                 <Phone size={15} strokeWidth={2.5} />
                 Call 02 6251 5444
               </a>
               <a
                 href="#contact"
-                className="flex items-center justify-center gap-2 border border-white/25 hover:border-white/50 text-white font-semibold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-all duration-200 cursor-pointer"
+                className="flex items-center justify-center gap-2 border border-[var(--color-electric)] hover:border-[var(--color-electric)]/70 text-white font-semibold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-all duration-200 cursor-pointer"
               >
                 <FileText size={15} />
                 Get a Quote

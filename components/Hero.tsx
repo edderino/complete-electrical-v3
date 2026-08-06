@@ -6,10 +6,10 @@ import Image from "next/image";
 import { Phone, FileText } from "lucide-react";
 
 const stats = [
-  { val: "600+", label: "Google Reviews" },
-  { val: "4.8★", label: "Average Rating" },
-  { val: "24/7", label: "Emergency Callout" },
-  { val: "1970", label: "Est. Canberra" },
+  { val: "600+", star: false, label: "Google Reviews" },
+  { val: "4.8", star: true, label: "Average Rating" },
+  { val: "24/7", star: false, label: "Emergency Callout" },
+  { val: "1970", star: false, label: "Est. Canberra" },
 ];
 
 export default function Hero() {
@@ -24,7 +24,7 @@ export default function Hero() {
     <section
       ref={ref}
       className="relative overflow-hidden md:min-h-screen md:flex md:flex-col"
-      style={{ backgroundColor: "#191D2A" }}
+      style={{ backgroundColor: "var(--color-charcoal)" }}
     >
       {/* ===================== DESKTOP (md and up) ===================== */}
       {/* Full-bleed fleet photo with subtle parallax */}
@@ -37,7 +37,7 @@ export default function Hero() {
           className="absolute inset-0 scale-[1.08] bg-cover [background-position:center_center]"
           style={{
             backgroundImage: "url('/bg-1280x853-1.webp')",
-            backgroundColor: "#191D2A",
+            backgroundColor: "var(--color-charcoal)",
           }}
         />
       </motion.div>
@@ -48,8 +48,8 @@ export default function Hero() {
         className="absolute inset-0 hidden md:block"
         style={{
           background: [
-            "linear-gradient(to right, rgba(25,29,42,0.88) 0%, rgba(25,29,42,0.80) 45%, rgba(25,29,42,0.22) 100%)",
-            "linear-gradient(to bottom, rgba(25,29,42,0.3) 0%, transparent 30%)",
+            "linear-gradient(to right, rgba(36,48,74,0.88) 0%, rgba(36,48,74,0.80) 45%, rgba(36,48,74,0.22) 100%)",
+            "linear-gradient(to bottom, rgba(36,48,74,0.3) 0%, transparent 30%)",
           ].join(", "),
         }}
       />
@@ -58,14 +58,14 @@ export default function Hero() {
       <div
         aria-hidden
         className="absolute inset-x-0 bottom-0 h-40 pointer-events-none hidden md:block"
-        style={{ background: "linear-gradient(to top, #252B3D 0%, transparent 100%)" }}
+        style={{ background: "linear-gradient(to top, var(--color-charcoal-mid) 0%, transparent 100%)" }}
       />
 
       {/* Desktop text content — centred over photo */}
       <div className="hidden md:flex relative wrap flex-1 flex-col justify-center pt-28 pb-4">
         <div className="max-w-lg">
           <div className="flex items-center gap-3 mb-7">
-            <span className="block w-5 h-px bg-[#F36A21]" />
+            <span className="block w-5 h-px bg-[var(--color-electric)]" />
             <span className="eyebrow">Canberra, ACT · Licensed &amp; Insured</span>
           </div>
 
@@ -75,7 +75,7 @@ export default function Hero() {
           >
             Electrical done
             <br />
-            <span style={{ color: "#F36A21" }}>right.</span>
+            <span style={{ color: "var(--color-orange)" }}>right.</span>
             <br />
             Every time.
           </h1>
@@ -88,14 +88,14 @@ export default function Hero() {
           <div className="flex flex-wrap gap-3">
             <a
               href="#contact"
-              className="flex items-center gap-2.5 bg-[#F36A21] hover:bg-[#D45B1A] text-white font-bold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-colors duration-200 cursor-pointer"
+              className="flex items-center gap-2.5 bg-[var(--color-orange)] hover:bg-[var(--color-orange-dim)] text-white font-bold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-colors duration-200 cursor-pointer"
             >
               <FileText size={14} strokeWidth={2.5} />
               Get a Quote
             </a>
             <a
               href="tel:0262515444"
-              className="flex items-center gap-2.5 border border-white/25 hover:border-white/50 text-white font-semibold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-all duration-200 cursor-pointer"
+              className="flex items-center gap-2.5 border border-[var(--color-electric)] hover:border-[var(--color-electric)]/70 text-white font-semibold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-all duration-200 cursor-pointer"
             >
               <Phone size={14} strokeWidth={2.5} />
               Call 02&nbsp;6251&nbsp;5444
@@ -107,13 +107,14 @@ export default function Hero() {
       {/* Desktop stat bar — anchored to bottom */}
       <div className="hidden md:block relative wrap pt-8 pb-8 mt-4">
         <div className="border-t border-white/12 pt-8 grid grid-cols-4 gap-6 divide-x divide-white/10">
-          {stats.map(({ val, label }) => (
+          {stats.map(({ val, star, label }) => (
             <div key={label} className="px-8 first:pl-0 last:pr-0">
               <p
                 className="text-white font-extrabold leading-none tracking-tight mb-1"
                 style={{ fontSize: "clamp(1.5rem, 2.4vw, 2rem)" }}
               >
                 {val}
+                {star && <span className="text-[var(--color-electric)]">★</span>}
               </p>
               <p className="text-[#888580] text-xs tracking-wide">{label}</p>
             </div>
@@ -137,18 +138,18 @@ export default function Hero() {
           <div
             aria-hidden
             className="absolute inset-0"
-            style={{ background: "linear-gradient(to bottom, rgba(25,29,42,0.30) 0%, rgba(25,29,42,0.50) 45%, rgba(25,29,42,0.85) 100%)" }}
+            style={{ background: "linear-gradient(to bottom, rgba(36,48,74,0.30) 0%, rgba(36,48,74,0.50) 45%, rgba(36,48,74,0.85) 100%)" }}
           />
           <div className="absolute inset-0 wrap flex flex-col justify-end pb-5">
             <div className="flex items-center gap-3 mb-2.5">
-              <span className="block w-5 h-px bg-[#F36A21]" />
+              <span className="block w-5 h-px bg-[var(--color-electric)]" />
               <span className="eyebrow">Canberra, ACT · Licensed &amp; Insured</span>
             </div>
             <h1
               className="text-white font-black leading-[0.95] tracking-[-0.035em]"
               style={{ fontSize: "clamp(1.7rem, 7vw, 2.4rem)" }}
             >
-              Electrical done <span style={{ color: "#F36A21" }}>right.</span>
+              Electrical done <span style={{ color: "var(--color-orange)" }}>right.</span>
               <br />
               Every time.
             </h1>
@@ -164,14 +165,14 @@ export default function Hero() {
           <div className="flex flex-col gap-3 mb-9">
             <a
               href="#contact"
-              className="flex items-center justify-center gap-2.5 bg-[#F36A21] hover:bg-[#D45B1A] text-white font-bold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-colors duration-200 cursor-pointer"
+              className="flex items-center justify-center gap-2.5 bg-[var(--color-orange)] hover:bg-[var(--color-orange-dim)] text-white font-bold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-colors duration-200 cursor-pointer"
             >
               <FileText size={14} strokeWidth={2.5} />
               Get a Quote
             </a>
             <a
               href="tel:0262515444"
-              className="flex items-center justify-center gap-2.5 border border-white/25 hover:border-white/50 text-white font-semibold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-all duration-200 cursor-pointer"
+              className="flex items-center justify-center gap-2.5 border border-[var(--color-electric)] hover:border-[var(--color-electric)]/70 text-white font-semibold text-sm tracking-[0.06em] uppercase px-8 py-4 transition-all duration-200 cursor-pointer"
             >
               <Phone size={14} strokeWidth={2.5} />
               Call 02&nbsp;6251&nbsp;5444
@@ -179,13 +180,14 @@ export default function Hero() {
           </div>
 
           <div className="border-t border-white/12 pt-7 grid grid-cols-2 gap-6">
-            {stats.map(({ val, label }) => (
+            {stats.map(({ val, star, label }) => (
               <div key={label}>
                 <p
                   className="text-white font-extrabold leading-none tracking-tight mb-1"
                   style={{ fontSize: "clamp(1.5rem, 2.4vw, 2rem)" }}
                 >
                   {val}
+                  {star && <span className="text-[var(--color-electric)]">★</span>}
                 </p>
                 <p className="text-[#888580] text-xs tracking-wide">{label}</p>
               </div>

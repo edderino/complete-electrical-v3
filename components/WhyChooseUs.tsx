@@ -32,7 +32,7 @@ const props = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="bg-[#191D2A] py-24 md:py-32">
+    <section id="why-us" className="bg-[var(--color-charcoal)] py-24 md:py-32">
       <div className="wrap">
 
         <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20 items-start">
@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
             className="lg:sticky lg:top-28"
           >
             <div className="flex items-center gap-3 mb-5">
-              <span className="block w-5 h-px bg-[#F36A21]" />
+              <span className="block w-5 h-px bg-[var(--color-electric)]" />
               <span className="eyebrow">Why choose us</span>
             </div>
             <h2
@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
             >
               Built on
               <br />
-              <span style={{ color: "#F36A21" }}>reputation.</span>
+              <span style={{ color: "var(--color-orange)" }}>reputation.</span>
             </h2>
             <p className="text-[#888580] text-sm leading-relaxed max-w-xs">
               600+ reviews and 50+ years on the tools. The track record speaks for itself.
@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
 
             <a
               href="#contact"
-              className="mt-10 inline-flex items-center gap-2 bg-[#F36A21] hover:bg-[#D45B1A] text-white font-bold text-xs tracking-[0.08em] uppercase px-7 py-3.5 transition-colors duration-200 cursor-pointer"
+              className="mt-10 inline-flex items-center gap-2 bg-[var(--color-orange)] hover:bg-[var(--color-orange-dim)] text-white font-bold text-xs tracking-[0.08em] uppercase px-7 py-3.5 transition-colors duration-200 cursor-pointer"
             >
               Get a Quote
             </a>
@@ -80,12 +80,12 @@ export default function WhyChooseUs() {
                 transition={{ duration: 0.45, delay: i * 0.1 }}
                 className="group flex items-start gap-6 py-8 first:pt-0 last:pb-0"
               >
-                <div className="flex-shrink-0 w-12 h-12 border border-white/10 group-hover:border-[#F36A21]/40 flex items-center justify-center transition-colors duration-300">
-                  <Icon size={18} className="text-[#F36A21]" strokeWidth={1.8} />
+                <div className="flex-shrink-0 w-12 h-12 border border-white/10 group-hover:border-[var(--color-electric)]/40 flex items-center justify-center transition-colors duration-300">
+                  <Icon size={18} className="text-[var(--color-electric)]" strokeWidth={1.8} />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-baseline gap-3 mb-2">
-                    <span className="text-[#F36A21] font-black text-xl tracking-tight">{stat}</span>
+                    <span className="text-[var(--color-orange)] font-black text-xl tracking-tight">{stat}</span>
                     <h3 className="text-white font-bold text-base">{heading}</h3>
                   </div>
                   <p className="text-[#888580] text-sm leading-relaxed">{body}</p>

@@ -34,7 +34,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-[#F5F4F2] py-24 md:py-32">
+    <section id="services" className="bg-[var(--color-cream)] py-24 md:py-32">
       <div className="wrap">
 
         {/* Header, left-aligned */}
@@ -46,7 +46,7 @@ export default function Services() {
           className="max-w-lg mb-16"
         >
           <div className="flex items-center gap-3 mb-5">
-            <span className="block w-5 h-px bg-[#F36A21]" />
+            <span className="block w-5 h-px bg-[var(--color-electric)]" />
             <span className="eyebrow">What we do</span>
           </div>
           <h2
@@ -75,26 +75,26 @@ export default function Services() {
                 transition={{ duration: 0.45, delay: i * 0.08 }}
                 className={`group relative p-10 md:p-12 flex flex-col justify-between min-h-[280px] cursor-pointer transition-colors duration-300 ${
                   svc.highlight
-                    ? "bg-[#191D2A] hover:bg-[#252B3D]"
+                    ? "bg-[var(--color-charcoal)] hover:bg-[var(--color-charcoal-mid)]"
                     : "bg-white hover:bg-[#F9F8F6]"
                 }`}
               >
                 {/* Orange left-border accent on hover */}
                 <div
                   className={`absolute left-0 top-0 bottom-0 w-[3px] transition-opacity duration-300 opacity-0 group-hover:opacity-100`}
-                  style={{ backgroundColor: "#F36A21" }}
+                  style={{ backgroundColor: "var(--color-orange)" }}
                 />
 
                 <div>
                   <div
                     className={`w-11 h-11 flex items-center justify-center mb-6 ${
-                      svc.highlight ? "bg-[#F36A21]" : "bg-[#F5F4F2] group-hover:bg-[#F36A21]/10"
+                      svc.highlight ? "bg-[#DC2626]" : "bg-[#EEF1F4]"
                     } transition-colors duration-300`}
                   >
                     <Icon
                       size={20}
                       strokeWidth={1.8}
-                      className={svc.highlight ? "text-white" : "text-[#F36A21]"}
+                      className={svc.highlight ? "text-white" : "text-[var(--color-electric)]"}
                     />
                   </div>
 
@@ -118,8 +118,8 @@ export default function Services() {
                   href={svc.href ?? "#contact"}
                   className={`mt-8 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.08em] uppercase transition-all duration-200 cursor-pointer group-hover:gap-3 ${
                     svc.highlight
-                      ? "text-[#F36A21] hover:text-white"
-                      : "text-[#191D2A] hover:text-[#F36A21]"
+                      ? "text-[#DC2626] hover:text-white"
+                      : "text-[#191D2A] hover:text-[var(--color-orange)]"
                   }`}
                 >
                   {svc.cta}

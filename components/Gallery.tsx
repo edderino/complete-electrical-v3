@@ -11,7 +11,7 @@ const photos = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="bg-[#F5F4F2] py-24 md:py-32">
+    <section id="gallery" className="bg-[var(--color-cream)] py-24 md:py-32">
       <div className="wrap">
 
         <motion.div
@@ -22,7 +22,7 @@ export default function Gallery() {
           className="max-w-lg mb-14"
         >
           <div className="flex items-center gap-3 mb-5">
-            <span className="block w-5 h-px bg-[#F36A21]" />
+            <span className="block w-5 h-px bg-[var(--color-electric)]" />
             <span className="eyebrow">Our work</span>
           </div>
           <h2
@@ -31,7 +31,7 @@ export default function Gallery() {
           >
             Recent jobs around
             <br />
-            <span style={{ color: "#F36A21" }}>Canberra.</span>
+            <span style={{ color: "var(--color-orange)" }}>Canberra.</span>
           </h2>
           <p className="text-[#6A6764] text-sm leading-relaxed">
             A snapshot of recent work. We&apos;ll keep this updated as new jobs roll in.

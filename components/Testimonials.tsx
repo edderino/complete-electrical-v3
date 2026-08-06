@@ -25,7 +25,7 @@ function Stars({ count }: { count: number }) {
   return (
     <div className="flex items-center gap-0.5">
       {Array.from({ length: count }).map((_, i) => (
-        <Star key={i} size={13} className="fill-[#F36A21] text-[#F36A21]" />
+        <Star key={i} size={13} className="fill-[var(--color-electric)] text-[var(--color-electric)]" />
       ))}
     </div>
   );
@@ -33,7 +33,7 @@ function Stars({ count }: { count: number }) {
 
 export default function Testimonials() {
   return (
-    <section id="reviews" className="bg-[#252B3D] py-24 md:py-32">
+    <section id="reviews" className="bg-[var(--color-charcoal-mid)] py-24 md:py-32">
       <div className="wrap">
 
         <motion.div
@@ -44,7 +44,7 @@ export default function Testimonials() {
           className="mb-14"
         >
           <div className="flex items-center gap-3 mb-5">
-            <span className="block w-5 h-px bg-[#F36A21]" />
+            <span className="block w-5 h-px bg-[var(--color-electric)]" />
             <span className="eyebrow">What customers say</span>
           </div>
           <h2
@@ -53,7 +53,7 @@ export default function Testimonials() {
           >
             Real reviews from
             <br />
-            <span style={{ color: "#F36A21" }}>Canberra locals.</span>
+            <span style={{ color: "var(--color-orange)" }}>Canberra locals.</span>
           </h2>
         </motion.div>
 
@@ -65,7 +65,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: i * 0.1 }}
-              className="bg-[#252B3D] p-8 md:p-10 flex flex-col gap-5"
+              className="bg-[var(--color-charcoal-mid)] p-8 md:p-10 flex flex-col gap-5"
             >
               <Stars count={t.stars} />
               <p className="text-[#C8C5C0] text-sm leading-relaxed flex-1">
